@@ -93,6 +93,7 @@ void Config(){
 }
 
 void EventDraw() {
+  	tft.drawNumber(score,165,5);
 	for (int i = 0; i < TFT_HEIGHT; i++) 
 	{
 		for (int j = -30; j < TFT_WIDTH; j++) 
@@ -116,8 +117,6 @@ void EventDraw() {
       		}
 		}
 	}
-  tft.fillRect(160,0,16,20,TFT_BLACK);
-  tft.drawNumber(score,165,5);
 }
 
 void EventWithoutInput() {
@@ -168,12 +167,6 @@ void HappyBirdRun() {
 		    EventWithoutInput();
 		    EventWithInput();
         }
-		tft.drawString("Your score is:",50,100);
-		tft.drawNumber(score,135,100);
-		tft.drawString("Touch to restart",50,110);
-		while(touchRead(T4) > Val_Ttouch){
-			;
-		}
     }
     else{
         tft.drawString("Touch to start",50,110);
