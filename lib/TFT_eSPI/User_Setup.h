@@ -77,7 +77,7 @@
 // For ST7789, ST7735, ILI9163 and GC9A01 ONLY, define the pixel width and height in portrait orientation
  #define TFT_WIDTH  176
 // #define TFT_WIDTH  80
- #define TFT_WIDTH  220
+ #define TFT_HEIGHT  220
 // #define TFT_WIDTH  128
 // #define TFT_WIDTH  240 // ST7789 240 x 240 and 240 x 320
 // #define TFT_HEIGHT 160
